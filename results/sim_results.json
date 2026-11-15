@@ -1,0 +1,283 @@
+{
+  "assumptions": {
+    "reservoir_area_m2": 40000000.0,
+    "area_error_in_detector": 0.05,
+    "level_noise_sigma_m": 0.01,
+    "flow_noise_rel": 0.02,
+    "uplink_interval_s": 300,
+    "samples_per_uplink": 5,
+    "lora_bw_hz": 125000.0,
+    "lora_cr": 1,
+    "lora_preamble": 8,
+    "lorawan_overhead_B": 13,
+    "app_payload_B": 20,
+    "lora_channels": 3,
+    "p_fade_loss": 0.02,
+    "node_distance_km": [
+      0.3,
+      6.0
+    ],
+    "sf_by_distance_km": {
+      "2.0": 7,
+      "3.5": 8,
+      "4.5": 9,
+      "6.0": 10
+    },
+    "backhaul_lognormal_median_s": 0.08,
+    "backhaul_lognormal_sigma": 0.5,
+    "gw_proc_s": [
+      0.005,
+      0.02
+    ],
+    "ingest_lognormal_median_s": 0.05,
+    "ingest_sigma": 0.5,
+    "dashboard_push_s": [
+      0.1,
+      0.4
+    ],
+    "raw_overhead_B": {
+      "https_per_uplink": 460,
+      "mqtt_per_uplink": 150
+    },
+    "edge_batch_overhead_B": 80,
+    "edge_binary_reading_B": 20,
+    "edge_batch_period_s": 60
+  },
+  "seed": 2026,
+  "pdr_vs_nodes": {
+    "20": {
+      "pdr_mean": 0.9776,
+      "pdr_std": 0.0034
+    },
+    "40": {
+      "pdr_mean": 0.9748,
+      "pdr_std": 0.0031
+    },
+    "80": {
+      "pdr_mean": 0.9705,
+      "pdr_std": 0.0027
+    },
+    "160": {
+      "pdr_mean": 0.9615,
+      "pdr_std": 0.0031
+    },
+    "320": {
+      "pdr_mean": 0.9428,
+      "pdr_std": 0.0037
+    }
+  },
+  "latency_40_nodes_s": {
+    "mean": 0.612,
+    "median": 0.588,
+    "p95": 0.93,
+    "p99": 1.035,
+    "n": 11254
+  },
+  "airtime_s_by_sf": {
+    "7": 0.0719,
+    "8": 0.1336,
+    "9": 0.2468,
+    "10": 0.4526
+  },
+  "sf_distribution_40_nodes": {
+    "7": 10,
+    "8": 13,
+    "9": 10,
+    "10": 7
+  },
+  "backhaul_bandwidth": {
+    "https_per_uplink": {
+      "raw_B_per_day": 5990400,
+      "edge_B_per_day": 345600,
+      "reduction_pct": 94.2
+    },
+    "mqtt_per_uplink": {
+      "raw_B_per_day": 2419200,
+      "edge_B_per_day": 345600,
+      "reduction_pct": 85.7
+    }
+  },
+  "accuracy_edge_median_filter": {
+    "level_m": {
+      "raw_MAE": 0.0091,
+      "raw_RMSE": 0.027,
+      "edge_MAE": 0.0041,
+      "edge_RMSE": 0.0053
+    },
+    "turbidity_NTU": {
+      "raw_MAE": 0.6934,
+      "raw_RMSE": 1.1891,
+      "edge_MAE": 0.3385,
+      "edge_RMSE": 0.4261
+    },
+    "pH": {
+      "raw_MAE": 0.0424,
+      "raw_RMSE": 0.0685,
+      "edge_MAE": 0.0214,
+      "edge_RMSE": 0.0271
+    },
+    "do_mgL": {
+      "raw_MAE": 0.1287,
+      "raw_RMSE": 0.2228,
+      "edge_MAE": 0.0643,
+      "edge_RMSE": 0.0821
+    }
+  },
+  "false_alarms_clean_stream": {
+    "range_rate": {
+      "fpr": 0.0,
+      "alarm_episodes_per_day": 0.0
+    },
+    "zscore": {
+      "fpr": 0.0,
+      "alarm_episodes_per_day": 0.0
+    },
+    "balance": {
+      "fpr": 0.0,
+      "alarm_episodes_per_day": 0.0
+    },
+    "stuck": {
+      "fpr": 0.0,
+      "alarm_episodes_per_day": 0.0
+    },
+    "combined": {
+      "fpr": 0.0,
+      "alarm_episodes_per_day": 0.0
+    }
+  },
+  "attacks": [
+    {
+      "kind": "step_offset",
+      "magnitude_m": 0.02,
+      "trials": 200,
+      "detection_rate": {
+        "range_rate": 0.0,
+        "zscore": 0.005,
+        "balance": 0.13,
+        "stuck": 0.0,
+        "combined": 0.135
+      },
+      "mean_delay_min": 132.4,
+      "median_delay_min": 200.0
+    },
+    {
+      "kind": "step_offset",
+      "magnitude_m": 0.05,
+      "trials": 200,
+      "detection_rate": {
+        "range_rate": 0.0,
+        "zscore": 0.925,
+        "balance": 1.0,
+        "stuck": 0.0,
+        "combined": 1.0
+      },
+      "mean_delay_min": 1.4,
+      "median_delay_min": 0.0
+    },
+    {
+      "kind": "step_offset",
+      "magnitude_m": 0.1,
+      "trials": 200,
+      "detection_rate": {
+        "range_rate": 0.09,
+        "zscore": 1.0,
+        "balance": 1.0,
+        "stuck": 0.0,
+        "combined": 1.0
+      },
+      "mean_delay_min": 0.0,
+      "median_delay_min": 0.0
+    },
+    {
+      "kind": "step_offset",
+      "magnitude_m": 0.3,
+      "trials": 200,
+      "detection_rate": {
+        "range_rate": 1.0,
+        "zscore": 1.0,
+        "balance": 1.0,
+        "stuck": 0.0,
+        "combined": 1.0
+      },
+      "mean_delay_min": 0.0,
+      "median_delay_min": 0.0
+    },
+    {
+      "kind": "ramp_offset",
+      "magnitude_m": -0.05,
+      "trials": 200,
+      "detection_rate": {
+        "range_rate": 0.0,
+        "zscore": 0.77,
+        "balance": 1.0,
+        "stuck": 0.0,
+        "combined": 1.0
+      },
+      "mean_delay_min": 141.6,
+      "median_delay_min": 180.0
+    },
+    {
+      "kind": "ramp_offset",
+      "magnitude_m": -0.3,
+      "trials": 200,
+      "detection_rate": {
+        "range_rate": 1.0,
+        "zscore": 1.0,
+        "balance": 1.0,
+        "stuck": 0.0,
+        "combined": 1.0
+      },
+      "mean_delay_min": 20.1,
+      "median_delay_min": 20.0
+    },
+    {
+      "kind": "replay",
+      "magnitude_m": 0.0,
+      "trials": 200,
+      "detection_rate": {
+        "range_rate": 0.395,
+        "zscore": 0.475,
+        "balance": 0.57,
+        "stuck": 0.0,
+        "combined": 0.58
+      },
+      "mean_delay_min": 21.2,
+      "median_delay_min": 0.0
+    },
+    {
+      "kind": "stuck",
+      "magnitude_m": 0.0,
+      "trials": 200,
+      "detection_rate": {
+        "range_rate": 0.0,
+        "zscore": 0.0,
+        "balance": 0.14,
+        "stuck": 1.0,
+        "combined": 1.0
+      },
+      "mean_delay_min": 50.0,
+      "median_delay_min": 50.0
+    },
+    {
+      "kind": "spike",
+      "magnitude_m": 0.5,
+      "trials": 200,
+      "detection_rate": {
+        "range_rate": 1.0,
+        "zscore": 1.0,
+        "balance": 0.0,
+        "stuck": 0.0,
+        "combined": 1.0
+      },
+      "mean_delay_min": 0.0,
+      "median_delay_min": 0.0
+    }
+  ],
+  "dos_gateway_jam": {
+    "jam_minutes": 30,
+    "trials": 100,
+    "detection_rate": 1.0,
+    "mean_delay_min": 12.8,
+    "false_alarms_per_day": 0.0
+  }
+}

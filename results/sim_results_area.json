@@ -1,0 +1,159 @@
+{
+  "fit": {
+    "R2": 0.9994663677804825,
+    "area_km2": {
+      "338": 37.7,
+      "340": 47.9,
+      "343": 63.3,
+      "346": 78.7,
+      "348.7": 92.6
+    }
+  },
+  "h0_340": {
+    "start_level_m": 340.0,
+    "area_km2_at_start": 47.9,
+    "level_range_m": [
+      340.0,
+      340.69
+    ],
+    "false_alarms": {
+      "fpr": 0.0,
+      "alarm_episodes_per_day": 0.0
+    },
+    "attacks": {
+      "step_0.03": {
+        "rate": 0.95,
+        "balance": 0.92,
+        "mean_delay_min": 52.7
+      },
+      "step_0.05": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 1.2
+      },
+      "step_0.10": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 0.0
+      },
+      "ramp_-0.10_2h": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 44.5
+      },
+      "replay_24h": {
+        "rate": 0.48,
+        "balance": 0.48,
+        "mean_delay_min": 17.7
+      },
+      "stuck": {
+        "rate": 1.0,
+        "balance": 0.1,
+        "mean_delay_min": 50.0
+      },
+      "spike_0.5": {
+        "rate": 1.0,
+        "balance": 0.0,
+        "mean_delay_min": 0.0
+      }
+    }
+  },
+  "h0_343": {
+    "start_level_m": 343.0,
+    "area_km2_at_start": 63.3,
+    "level_range_m": [
+      343.0,
+      343.53
+    ],
+    "false_alarms": {
+      "fpr": 0.0,
+      "alarm_episodes_per_day": 0.0
+    },
+    "attacks": {
+      "step_0.03": {
+        "rate": 0.96,
+        "balance": 0.93,
+        "mean_delay_min": 53.7
+      },
+      "step_0.05": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 1.2
+      },
+      "step_0.10": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 0.0
+      },
+      "ramp_-0.10_2h": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 44.5
+      },
+      "replay_24h": {
+        "rate": 0.45,
+        "balance": 0.45,
+        "mean_delay_min": 16.9
+      },
+      "stuck": {
+        "rate": 1.0,
+        "balance": 0.1,
+        "mean_delay_min": 50.0
+      },
+      "spike_0.5": {
+        "rate": 1.0,
+        "balance": 0.0,
+        "mean_delay_min": 0.0
+      }
+    }
+  },
+  "h0_346": {
+    "start_level_m": 346.0,
+    "area_km2_at_start": 78.7,
+    "level_range_m": [
+      346.0,
+      346.43
+    ],
+    "false_alarms": {
+      "fpr": 0.0,
+      "alarm_episodes_per_day": 0.0
+    },
+    "attacks": {
+      "step_0.03": {
+        "rate": 0.96,
+        "balance": 0.93,
+        "mean_delay_min": 53.8
+      },
+      "step_0.05": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 1.2
+      },
+      "step_0.10": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 0.0
+      },
+      "ramp_-0.10_2h": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 44.3
+      },
+      "replay_24h": {
+        "rate": 0.44,
+        "balance": 0.44,
+        "mean_delay_min": 12.3
+      },
+      "stuck": {
+        "rate": 1.0,
+        "balance": 0.08,
+        "mean_delay_min": 50.0
+      },
+      "spike_0.5": {
+        "rate": 1.0,
+        "balance": 0.0,
+        "mean_delay_min": 0.0
+      }
+    }
+  }
+}

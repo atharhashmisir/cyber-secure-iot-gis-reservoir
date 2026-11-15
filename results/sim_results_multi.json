@@ -1,0 +1,246 @@
+{
+  "A_large_monsoon": {
+    "label": "Large monsoon-fed (Gangrel-like)",
+    "area_km2": 40.0,
+    "nodes": 40,
+    "level_range_m": [
+      10.0,
+      10.856
+    ],
+    "pdr_mean": 0.9745,
+    "pdr_std": 0.0029,
+    "latency_mean_s": 0.612,
+    "latency_p95_s": 0.93,
+    "false_alarms": {
+      "fpr": 0.0,
+      "alarm_episodes_per_day": 0.0
+    },
+    "attacks": {
+      "step_0.03": {
+        "rate": 0.93,
+        "balance": 0.92,
+        "mean_delay_min": 51.9
+      },
+      "step_0.05": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 1.3
+      },
+      "step_0.10": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 0.0
+      },
+      "ramp_-0.10_2h": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 44.5
+      },
+      "replay_24h": {
+        "rate": 0.53,
+        "balance": 0.52,
+        "mean_delay_min": 17.3
+      },
+      "stuck": {
+        "rate": 1.0,
+        "balance": 0.12,
+        "mean_delay_min": 50.0
+      },
+      "spike_0.5": {
+        "rate": 1.0,
+        "balance": 0.0,
+        "mean_delay_min": 0.0
+      }
+    },
+    "dos": {
+      "jam_minutes": 30,
+      "trials": 40,
+      "detection_rate": 1.0,
+      "mean_delay_min": 12.9,
+      "false_alarms_per_day": 0.0
+    }
+  },
+  "B_small_urban": {
+    "label": "Small urban water body",
+    "area_km2": 0.5,
+    "nodes": 8,
+    "level_range_m": [
+      9.905,
+      10.091
+    ],
+    "pdr_mean": 0.9782,
+    "pdr_std": 0.004,
+    "latency_mean_s": 0.483,
+    "latency_p95_s": 0.646,
+    "false_alarms": {
+      "fpr": 0.0,
+      "alarm_episodes_per_day": 0.0
+    },
+    "attacks": {
+      "step_0.03": {
+        "rate": 0.95,
+        "balance": 0.92,
+        "mean_delay_min": 52.2
+      },
+      "step_0.05": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 1.1
+      },
+      "step_0.10": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 0.0
+      },
+      "ramp_-0.10_2h": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 44.1
+      },
+      "replay_24h": {
+        "rate": 0.54,
+        "balance": 0.53,
+        "mean_delay_min": 28.0
+      },
+      "stuck": {
+        "rate": 1.0,
+        "balance": 0.0,
+        "mean_delay_min": 50.0
+      },
+      "spike_0.5": {
+        "rate": 1.0,
+        "balance": 0.0,
+        "mean_delay_min": 0.0
+      }
+    },
+    "dos": {
+      "jam_minutes": 30,
+      "trials": 40,
+      "detection_rate": 1.0,
+      "mean_delay_min": 12.8,
+      "false_alarms_per_day": 0.0
+    }
+  },
+  "C_arid_flash": {
+    "label": "Arid reservoir, flash floods",
+    "area_km2": 8.0,
+    "nodes": 20,
+    "level_range_m": [
+      9.932,
+      10.058
+    ],
+    "pdr_mean": 0.9784,
+    "pdr_std": 0.0022,
+    "latency_mean_s": 0.534,
+    "latency_p95_s": 0.734,
+    "false_alarms": {
+      "fpr": 0.0,
+      "alarm_episodes_per_day": 0.0
+    },
+    "attacks": {
+      "step_0.03": {
+        "rate": 0.96,
+        "balance": 0.93,
+        "mean_delay_min": 73.0
+      },
+      "step_0.05": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 1.1
+      },
+      "step_0.10": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 0.0
+      },
+      "ramp_-0.10_2h": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 42.5
+      },
+      "replay_24h": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 16.0
+      },
+      "stuck": {
+        "rate": 1.0,
+        "balance": 0.02,
+        "mean_delay_min": 50.0
+      },
+      "spike_0.5": {
+        "rate": 1.0,
+        "balance": 0.0,
+        "mean_delay_min": 0.0
+      }
+    },
+    "dos": {
+      "jam_minutes": 30,
+      "trials": 40,
+      "detection_rate": 1.0,
+      "mean_delay_min": 12.7,
+      "false_alarms_per_day": 0.0
+    }
+  },
+  "D_snowmelt": {
+    "label": "Snowmelt-fed mountain reservoir",
+    "area_km2": 15.0,
+    "nodes": 25,
+    "level_range_m": [
+      9.746,
+      10.035
+    ],
+    "pdr_mean": 0.9777,
+    "pdr_std": 0.0022,
+    "latency_mean_s": 0.577,
+    "latency_p95_s": 0.889,
+    "false_alarms": {
+      "fpr": 0.0,
+      "alarm_episodes_per_day": 0.0
+    },
+    "attacks": {
+      "step_0.03": {
+        "rate": 0.97,
+        "balance": 0.94,
+        "mean_delay_min": 55.2
+      },
+      "step_0.05": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 1.1
+      },
+      "step_0.10": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 0.0
+      },
+      "ramp_-0.10_2h": {
+        "rate": 1.0,
+        "balance": 1.0,
+        "mean_delay_min": 43.8
+      },
+      "replay_24h": {
+        "rate": 0.97,
+        "balance": 0.96,
+        "mean_delay_min": 9.9
+      },
+      "stuck": {
+        "rate": 1.0,
+        "balance": 0.06,
+        "mean_delay_min": 50.0
+      },
+      "spike_0.5": {
+        "rate": 1.0,
+        "balance": 0.0,
+        "mean_delay_min": 0.0
+      }
+    },
+    "dos": {
+      "jam_minutes": 30,
+      "trials": 40,
+      "detection_rate": 1.0,
+      "mean_delay_min": 13.1,
+      "false_alarms_per_day": 0.0
+    }
+  }
+}

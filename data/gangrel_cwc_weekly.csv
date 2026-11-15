@@ -1,0 +1,42 @@
+date,level_m,live_storage_bcm,series,pct_of_frl_capacity
+2023-02-01,347.99,0.7,previous-year column,91.3
+2023-03-14,346.86,0.601,previous-year column,78.4
+2023-04-12,345.05,0.458,previous-year column,59.7
+2023-05-02,343.7,0.364,previous-year column,47.5
+2023-06-27,343.91,0.377,previous-year column,49.2
+2023-07-25,346.22,0.55,previous-year column,71.7
+2023-08-01,346.55,0.577,previous-year column,75.2
+2023-08-08,346.85,0.6,previous-year column,78.2
+2023-08-29,345.19,0.46,previous-year column,60.0
+2023-09-05,344.29,0.401,previous-year column,52.3
+2023-09-12,343.78,0.369,previous-year column,48.1
+2023-10-10,344.31,0.402,previous-year column,52.4
+2023-10-17,343.47,0.349,previous-year column,45.5
+2023-11-07,343.73,0.357,previous-year column,46.5
+2023-11-14,343.84,0.372,previous-year column,48.5
+2023-12-05,343.53,0.353,previous-year column,46.0
+2023-12-19,343.34,0.341,previous-year column,44.5
+2023-12-26,343.27,0.337,previous-year column,43.9
+2024-01-30,342.75,0.304,previous-year column,39.6
+2024-02-01,342.57,0.293,this-year (bulletin date),38.2
+2024-03-14,341.27,0.214,this-year (bulletin date),27.9
+2024-04-12,339.83,0.145,this-year (bulletin date),18.9
+2024-05-02,339.18,0.114,this-year (bulletin date),14.9
+2024-05-08,339.19,0.114,previous-year column,14.9
+2024-06-27,337.29,0.038,this-year (bulletin date),5.0
+2024-07-25,343.38,0.344,this-year (bulletin date),44.9
+2024-08-01,347.55,0.64,this-year (bulletin date),83.4
+2024-08-08,347.91,0.692,this-year (bulletin date),90.2
+2024-08-29,347.22,0.63,this-year (bulletin date),82.1
+2024-09-05,346.03,0.535,this-year (bulletin date),69.8
+2024-09-12,348.59,0.757,this-year (bulletin date),98.7
+2024-10-10,347.21,0.629,this-year (bulletin date),82.0
+2024-10-17,346.62,0.582,this-year (bulletin date),75.9
+2024-11-07,346.37,0.562,this-year (bulletin date),73.3
+2024-11-14,346.34,0.56,this-year (bulletin date),73.0
+2024-11-21,346.3,0.557,this-year (bulletin date),72.6
+2024-12-05,346.04,0.536,this-year (bulletin date),69.9
+2024-12-19,345.78,0.516,this-year (bulletin date),67.3
+2024-12-26,345.64,0.505,this-year (bulletin date),65.8
+2025-01-30,345.03,0.457,this-year (bulletin date),59.6
+2025-05-08,341.56,0.23,this-year (bulletin date),30.0
